@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_invite_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/five_dp"
+        android:background="@color/white">
+
+        <cab.com.rideversitydriver.Shapes.RoundedImageView
+            android:id="@+id/imageView_invite_driver_images"
+            android:layout_width="@dimen/fourtyfive_dp"
+            android:layout_height="@dimen/fourtyfive_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:src="@drawable/no_image" />
+
+
+        <ImageView
+            android:id="@+id/imageView_arrow"
+            android:layout_width="@dimen/fifteen_dp"
+            android:layout_height="@dimen/fifteen_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:src="@drawable/orange_arrow" />
+
+        <!--<View
+             android:id="@+id/line_center"
+             android:layout_width="@dimen/five_dp"
+             android:layout_height="10dp"
+             android:layout_toRightOf="@+id/imageView_invite_driver_images"
+             android:layout_centerInParent="true"
+             android:background="@color/orange" />-->
+
+        <TextView
+            android:id="@+id/textView_invite_driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_invite_driver_images"
+            android:maxLines="1"
+            android:text="John Doe"
+            android:textAllCaps="false"
+            android:layout_toLeftOf="@+id/imageView_arrow"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/textView_invite_driver_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:text="Kia Cerato 488-FJS"
+            android:layout_toLeftOf="@+id/imageView_arrow"
+            android:layout_toRightOf="@+id/imageView_invite_driver_images"
+            android:layout_below="@+id/textView_invite_driver_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/point_five_dp"
+        android:layout_below="@+id/layout_invite_driver"
+        android:background="@color/grey" />
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout
+        android:id="@+id/layout_invite_driver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="@color/white">
+
+        <cab.com.rideversity.Shapes.RoundedImageView
+            android:id="@+id/imageView_invite_driver_images"
+            android:layout_width="@dimen/fourtyfive_dp"
+            android:layout_height="@dimen/fourtyfive_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:src="@drawable/rounded_background_orange" />
+
+        <ImageView
+            android:id="@+id/imageView_favo_driver"
+            android:layout_width="@dimen/thirtyfive_dp"
+            android:layout_height="@dimen/thirtyfive_dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:layout_toLeftOf="@+id/imageVffiew_arrow"
+            android:visibility="invisible"
+            android:src="@drawable/fav_driver_icon" />
+
+        <ImageView
+            android:id="@+id/imageVffiew_arrow"
+            android:layout_width="@dimen/fifteen_dp"
+            android:layout_height="@dimen/fifteen_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:src="@drawable/orange_arrow" />
+
+        <View
+            android:id="@+id/line_ffthree"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/textView_invite_driver_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_favo_driver"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/imageView_invite_driver_images"
+            android:layout_toRightOf="@+id/imageView_invite_driver_images"
+            android:maxLines="1"
+            android:layout_below="@+id/line_ffthree"
+            android:text="Kia Cerato 488-FJS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/textView_invite_driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line_ffthree"
+            android:layout_toEndOf="@+id/imageView_invite_driver_images"
+            android:layout_toRightOf="@+id/imageView_invite_driver_images"
+            android:maxLines="1"
+            android:text="John Doe"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/point_five_dp"
+        android:layout_below="@+id/layout_invite_driver"
+        android:background="@color/grey" />-->
+</RelativeLayout>

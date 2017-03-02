@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_rewards_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cab.com.rideversitydriver.Activities.RewardsFilterActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/categoryLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@color/white"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/categoryLabel"
+            android:layout_weight="1.3"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal|fill_vertical|start"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:text="@string/category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <cab.com.rideversitydriver.Utils.MySpinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:paddingRight="@dimen/fourty_dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal|fill_vertical|start"
+            android:background="@drawable/spinner_down"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            />
+    </LinearLayout>
+
+   <!-- <RelativeLayout
+        android:id="@+id/categoryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/categoryLabel"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:layout_marginTop="@dimen/twentyfive_dp"
+            android:text="@string/category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <cab.com.rideversitydriver.Utils.MySpinner
+            android:id="@+id/spinner_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten_dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/spinner_down"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_below="@+id/categoryLabel"
+            android:background="@color/grey" />
+
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_below="@id/categoryLayout"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/expiryLabel"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:layout_marginTop="@dimen/twentyfive_dp"
+            android:text="@string/expiration_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/fromDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:text="Tap to select"
+            android:layout_toLeftOf="@+id/hypen"
+            />
+
+        <TextView
+            android:id="@+id/toDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/five_dp"
+            android:gravity="bottom"
+            android:layout_centerInParent="true"
+            android:text="Tap to select"
+            android:layout_alignParentRight="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_below="@+id/expiryLabel"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/hypen"
+            android:layout_width="@dimen/ten_dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:layout_marginEnd="@dimen/fifteen_dp"
+            android:layout_alignBaseline="@+id/toDate"
+            android:layout_alignBottom="@+id/toDate"
+            android:layout_toLeftOf="@+id/toDate"
+            android:layout_toStartOf="@+id/toDate"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_filter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:paddingRight="@dimen/five_dp"
+        android:paddingStart="@dimen/five_dp"
+        android:paddingLeft="@dimen/five_dp"
+        android:paddingEnd="@dimen/five_dp"
+        android:layout_marginTop="@dimen/two_hundred_dp"
+        android:background="@drawable/orange_button_empty"
+        android:text="@string/apply_filter"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
+

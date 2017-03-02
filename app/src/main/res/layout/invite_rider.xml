@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/textView_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fifty_dp">
+
+            <TextView
+                android:id="@+id/textView_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:text="X"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="0.3dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fifteen_dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_toRightOf="@+id/textView_arrow"
+                android:background="@color/grey" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/textView_backarrow"
+            android:text="INVITE RIDER"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/textView_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="DONE"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignBaseline="@+id/textView_appname"
+            android:layout_alignBottom="@+id/textView_appname"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@+id/header"
+        android:layout_margin="@dimen/ten_dp">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_bacground"
+            android:drawablePadding="@dimen/ten_dp"
+            android:hint="Search"
+            android:cursorVisible="false"
+            android:paddingLeft="@dimen/fourty_dp"
+            android:paddingRight="@dimen/five_dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey"
+            android:textCursorDrawable="@drawable/custom_edittext_cursor_green">
+        </EditText>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="@dimen/twenty_dp"
+            android:layout_height="@dimen/twenty_dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/home_search_icon" />
+
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/inviteDriver_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_search">
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

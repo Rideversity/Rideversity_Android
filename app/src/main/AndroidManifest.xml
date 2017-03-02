@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cab.com.rideversitydriver">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="WRITE_EXTERNAL_STORAGE" />
+    />
+
+    <application
+        android:name=".Utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.HomeMenu"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activities.RideDetails_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PrivacyPolicy_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FrequentlyAskedQustions_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NotificationSetting_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TermsandCondition_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RideLists_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RideFilter_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AddNewCreditcard_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CarPoolDetail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CarPoolCreate_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PastRideDetail_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Activities.ActiveRideDetail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RewardsDetail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PersonalDetails_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        <activity
+            android:name=".Activities.EmergencyContacts_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChangeEmail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChangePassword_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DriverDoc_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DriverDocReg_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDatePickerDialogTheme" />
+        <activity
+            android:name=".Activities.VehicleDoc_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.VehicleDocReg_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ForgotUsername_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ForgetPassword_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AdvancedBooking_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AdvancedBookingRideDetails_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.InviteRiderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Registration_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        <activity
+            android:name=".Activities.Registration_two_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.RewardsFilterActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <!--<meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAoO5kI278i7PdqCpvSIbltLCURC1khbmw" />
+-->
+
+        <!--Zuhad API key-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA7jIRF4djvBgjDuYXB1vaSd-wddXgVzBA" />
+
+        <!--  <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCJ6wmsGTPqfW6EnT9p-6hb8egZag8mTmk" />-->
+
+        <service android:name=".PushNotification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".PushNotification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".Utils.SendLatLongService"
+            android:enabled="true" />
+
+    </application>
+
+</manifest>

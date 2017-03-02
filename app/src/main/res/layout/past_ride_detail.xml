@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hundred_fifty_dp"
+        android:background="@drawable/past_ride_history">
+
+        <fragment
+            android:id="@+id/map_past_ride"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundred_fifty_dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourtyfive_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/five_dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/five_dp"
+                android:text="Rider : " />
+
+            <TextView
+                android:id="@+id/textView_RriderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_driver"
+                android:text="@string/rider1" />
+
+            <TextView
+                android:id="@+id/textView_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_driver"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:text="@string/car_used"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary" />
+
+            <cab.com.rideversitydriver.Shapes.RoundedImageView
+                android:id="@+id/imageView_Rider"
+                android:layout_width="@dimen/thirtyfive_dp"
+                android:layout_height="@dimen/thirtyfive_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/five_dp"
+                android:padding="@dimen/five_dp"
+                android:src="@drawable/welcome_bg"/>
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/five_dp"
+                android:src="@drawable/rounded_background_orange" />-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/datetime"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="05/10/2016 / 4:30 P.M"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/pick_up_location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/past_pick_up_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="162 NE SE Street Miami Fl"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/destination"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/past_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="162 NE SE Street Miami Fl"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/no_of_seats"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/past_no_seats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/ride_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/past_ride_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Real-Time Ride"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/suggested_donation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/past_suggested_donation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="$10.00"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16" />
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/trip"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/past_trip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="One-Way"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:visibility="gone"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/comments"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/past_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="I'm on the corner of 162"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@color/grey" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

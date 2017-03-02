@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:padding="@dimen/five_dp">
+
+    <TextView
+        android:id="@+id/textView_dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:gravity="center"
+        android:text="@string/cancel_ride"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_25" />
+
+    <TextView
+        android:id="@+id/textView_dialogDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_dialogTitle"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:gravity="center"
+        android:text="@string/cancel_desc"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_16" />
+
+   <!-- <TextView
+        android:id="@+id/textView_dialogDesc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_dialogDesc"
+        android:layout_marginTop="@dimen/two_dp"
+        android:gravity="center"
+        android:text="@string/reg_desc2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_16" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_dialogDesc"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/twenty_dp">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="@string/dialog_yes"
+            android:textColor="@color/white"
+            android:background="@color/orange"/>
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:text="@string/dialog_no"
+            android:background="@drawable/rectangle_orange_border_background"/>
+
+    </RelativeLayout>
+</RelativeLayout>

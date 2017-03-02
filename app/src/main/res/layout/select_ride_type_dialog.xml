@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ten_dp"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select a ride type"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_20"
+            android:id="@+id/textView3"/>
+
+        <!--<TextView
+            android:layout_width="@dimen/fourty_dp"
+            android:layout_height="@dimen/fourty_dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:text="X"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:id="@+id/textView_close"/>-->
+        <ImageView
+            android:layout_width="@dimen/twenty_dp"
+            android:layout_height="@dimen/twenty_dp"
+            android:src="@drawable/close_popup_icon"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageView_close"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:layout_centerInParent="true"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="@string/pickup_now"
+        android:id="@+id/button_pickup_now"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/button_pickup_now"
+        android:background="@color/orange"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="@string/pickup_later"
+        android:id="@+id/button_pickup_later"/>
+</RelativeLayout>

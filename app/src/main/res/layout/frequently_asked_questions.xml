@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:id="@+id/layout_faq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+
+    <include layout="@layout/toolbar"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:background="@color/white"
+        android:layout_below="@+id/toolbar">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:id="@+id/scrollView2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frequently_asked_questions"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:id="@+id/textView_terms_condition"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:id="@+id/textView_faq"/>
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Q 1"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp_16"
+                     android:layout_marginTop="@dimen/fifteen_dp"
+                     />-->
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="A 1"
+                     android:layout_marginLeft="@dimen/fifteen_dp"
+                     android:textColor="@color/dark_grey"
+                     android:textSize="@dimen/sp_16"
+                     android:layout_marginTop="@dimen/fifteen_dp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Q 2"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp_16"
+                     android:layout_marginTop="@dimen/fifteen_dp"
+                 />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="A 1"
+                     android:layout_marginLeft="@dimen/fifteen_dp"
+                     android:textColor="@color/dark_grey"
+                     android:textSize="@dimen/sp_16"
+                     android:layout_marginTop="@dimen/fifteen_dp"
+                 />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Q 3"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp_16"
+                     android:layout_marginTop="@dimen/fifteen_dp"
+                 />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="A 1"
+                     android:layout_marginLeft="@dimen/fifteen_dp"
+                     android:textColor="@color/dark_grey"
+                     android:textSize="@dimen/sp_16"
+                     android:layout_marginTop="@dimen/fifteen_dp"
+                 />-->
+            </LinearLayout>
+        </ScrollView>
+
+    </WebView>
+
+
+</RelativeLayout>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/layout_real_time_rides"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:visibility="gone"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/imageView_drcvbiver_arrow"
+                    android:layout_width="@dimen/fifteen_dp"
+                    android:layout_height="@dimen/fifteen_dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    android:src="@drawable/orange_arrow" />
+
+                <!--<TextView
+                    android:id="@+id/textView_driverscvb_avaliable"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:text="@string/real_time_rides"
+                    android:maxLines="1"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+
+
+                <TextView
+                    android:id="@+id/textView_ride_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/line_three"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:maxLines="1"
+                    android:text="@string/real_time_rides"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/line_three"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/textView_tap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line_three"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/two_dp"
+                    android:maxLines="1"
+                    android:text="@string/avaliable"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/total_number_of_drivers"
+                    android:layout_width="@dimen/fourtyfive_dp"
+                    android:layout_height="@dimen/fourtyfive_dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:background="@drawable/rounded_background_orange"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/layout_advanced_booking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_below="@+id/layout_real_time_rides"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/imageView_driver_arrow"
+                    android:layout_width="@dimen/fifteen_dp"
+                    android:layout_height="@dimen/fifteen_dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    android:src="@drawable/orange_arrow" />
+
+                <!--<TextView
+                    android:id="@+id/textView_drivers_avaliable"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:text="aaaa"
+                    android:maxLines="1"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+
+                <TextView
+                    android:id="@+id/textView_advanced_booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/line_two"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:maxLines="1"
+                    android:text="@string/advanced_booking"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/line_two"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/textView_avaliable_advanced_booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line_two"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/two_dp"
+                    android:maxLines="1"
+                    android:text="@string/avaliable"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/textView_drivers_avaliable_numbers"
+                    android:layout_width="@dimen/fourtyfive_dp"
+                    android:layout_height="@dimen/fourtyfive_dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:background="@drawable/rounded_background_orange"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_rider_call_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/layout_advanced_booking"
+                android:layout_marginTop="@dimen/ten_dp">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_driver_call_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_margin="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_call_driver"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_margin="@dimen/three_dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/orange_button_empty">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView_callrider"
+                                android:layout_width="@dimen/twenty_dp"
+                                android:layout_height="@dimen/twenty_dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/call_driver_icon" />
+
+                            <TextView
+                                android:id="@+id/textView_callrider"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/five_dp"
+                                android:text="@string/call_rider"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_text_driver"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_margin="@dimen/three_dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/orange_button_empty">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView_textrider"
+                                android:layout_width="@dimen/twenty_dp"
+                                android:layout_height="@dimen/twenty_dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/text_driver_icon" />
+
+                            <TextView
+                                android:id="@+id/textView_textrider"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/five_dp"
+                                android:text="@string/text_rider"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_16" />
+                        </LinearLayout>
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_rider"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/textView_reasdgister"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/fifteen_dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/text_driver_icon"
+                            android:id="@+id/imageVsdiew5"/>-->
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sixty_dp"
+                    android:layout_margin="@dimen/ten_dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <Button
+                        android:id="@+id/button_call_rider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:background="@drawable/orange_button_empty"
+                        android:text="@string/call_rider"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <Button
+                        android:id="@+id/button_text_rider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:background="@drawable/orange_button_empty"
+                        android:text="@string/text_rider"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_rider_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_below="@+id/layout_rider_call_text"
+                android:layout_margin="@dimen/ten_dp"
+                android:background="@color/white">
+
+                <cab.com.rideversitydriver.Shapes.RoundedImageView
+                    android:id="@+id/imageView_driver_image"
+                    android:layout_width="@dimen/fourtyfive_dp"
+                    android:layout_height="@dimen/fourtyfive_dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    android:src="@drawable/welcome_bg" />
+
+                <!--<ImageView
+                    android:layout_width="@dimen/fourty_dp"
+                    android:layout_height="@dimen/fourty_dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    android:src="@drawable/rounded_background_orange"
+                    android:id="@+id/imageView_driver_image"/>-->
+
+                <TextView
+                    android:id="@+id/textRiderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:maxLines="1"
+                    android:text="RIDER: JOHN DOE"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/requestPendingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sp_40"
+                android:layout_alignLeft="@+id/layout_rider_detail"
+                android:layout_alignStart="@+id/layout_rider_detail"
+                android:layout_below="@+id/layout_rider_detail"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:background="@color/bt_red"
+                android:text="REQUEST PENDING!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_request_ride"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/orange_button_empty"
+            android:text="@string/accept_ride"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/button_cancel_ride"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/bt_red"
+            android:text="@string/cancel_request"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/refresh_btn"
+            android:layout_width="@dimen/fourty_dp"
+            android:layout_height="@dimen/fourty_dp"
+            android:visibility="visible"
+            android:src="@drawable/refresh_btn"
+            android:layout_gravity="bottom|right"
+            android:baselineAlignBottom="true"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/sixty_dp"
+            android:padding="@dimen/five_dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/notifyLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/five_dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/cancel_Button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/three_dp"
+                android:layout_weight="1"
+                android:background="@drawable/orange_button_empty"
+                android:text="@string/cancel_button"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/notify_arrival_complete_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/three_dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_btn"
+                android:text="@string/notify_arrival"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout_source"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/fifteen_dp"
+                android:src="@drawable/ride_history_from" />
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/line"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:maxLines="1"
+                android:text="@string/pick_up_location"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/text_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/two_dp"
+                android:maxLines="1"
+                android:text="744 NE 29 ST Miami FL"
+                android:textColor="@color/colorPrimary"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout_destination"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_below="@+id/layout_source">
+
+            <ImageView
+                android:id="@+id/imageView_location"
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/fifteen_dp"
+                android:src="@drawable/ride_history_to" />
+
+            <TextView
+                android:id="@+id/textView_requesting_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/line_five"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:maxLines="1"
+                android:text="@string/drop_off_location"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:id="@+id/line_five"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/textView_justsec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_five"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/two_dp"
+                android:maxLines="1"
+                android:text="744 NE 29 ST Miami FL"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

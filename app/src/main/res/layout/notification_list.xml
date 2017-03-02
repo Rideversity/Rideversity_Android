@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_notification_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/notification_Header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twenty_dp"
+        android:background="@color/dark_grey"
+        android:gravity="center"
+        android:text="Notification Header"
+        android:textColor="@color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_notification_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_Header"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/fifteen_dp"
+        android:paddingTop="@dimen/fifteen_dp">
+
+
+        <ListView
+            android:id="@+id/lst_view_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!--  <TextView
+              android:id="@+id/textview_notification"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/notification_one"
+              android:layout_alignParentLeft="true"
+              android:layout_toLeftOf="@+id/toggle_notification"
+              android:layout_marginLeft="@dimen/ten_dp"
+              android:textColor="@color/black"
+              android:layout_below="@+id/notification_Header"
+              android:layout_centerInParent="true"
+              android:textSize="@dimen/sp_16" />
+
+          <android.support.v7.widget.SwitchCompat
+              android:id="@+id/toggle_notification"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="@dimen/ten_dp"
+              android:clickable="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginLeft="@dimen/twentyfive_dp"
+              android:focusable="true"
+              android:layout_centerInParent="true"
+              app:theme="@style/switchStyle"
+              android:theme="@style/switchStyle"/>-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/point_five_dp"
+        android:background="@color/grey" />
+
+</RelativeLayout>

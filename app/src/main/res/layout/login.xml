@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/welcome_bg">
+
+    <ImageView
+        android:layout_width="@dimen/two_hundred_dp"
+        android:layout_height="@dimen/two_hundred_dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/welcome_logo"
+        android:layout_marginTop="@dimen/fourty_dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView_icon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_icon"
+        android:paddingBottom="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/thirtyfive_dp"
+        android:background="#8C000000">
+
+        <RelativeLayout
+            android:id="@+id/layout_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:background="@drawable/orange_button_empty">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_email"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:layout_centerInParent="true"
+                android:id="@+id/textView_register"/>
+
+            <ImageView
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/twenty_dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/welcome_email"
+                android:id="@+id/imageView5"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/thirtyfive_dp"
+            android:layout_marginRight="@dimen/thirtyfive_dp"
+            android:layout_below="@+id/layout_register"
+            android:background="@drawable/green_button">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:layout_centerInParent="true"
+                android:id="@+id/textView_login"/>
+        </RelativeLayout>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_username"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteen_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/layout_login"
+            android:id="@+id/textView"/>-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_of_service"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirteen_dp"
+        android:textStyle="normal"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/fifteen_dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/textView_terms_of_service"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_reg_rideversity"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirteen_dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/textView_terms_of_service"
+        android:layout_marginBottom="@dimen/five_dp"
+        android:id="@+id/textView_register_agree"/>
+</RelativeLayout>

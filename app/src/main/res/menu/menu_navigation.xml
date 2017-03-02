@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ride_home"
+            android:title="HOME"
+            android:icon="@drawable/nav_request_icon"/>
+        <!--<item
+            android:id="@+id/carpool"
+            android:title="CARPOOL"
+            android:icon="@drawable/nav_carpool_icon"/>-->
+
+        <item
+            android:id="@+id/payments"
+            android:title="PAYMENT"
+            android:icon="@drawable/nav_payment_icon"/>
+        <item
+            android:id="@+id/rewards"
+            android:title="REWARDS"
+            android:icon="@drawable/nav_rewards_icon"/>
+
+        <item
+            android:id="@+id/ride_history"
+            android:title="MY RIDES"
+            android:icon="@drawable/nav_history_icon"/>
+
+        <item
+            android:id="@+id/navigation_empty"
+            android:checked="false"
+            app:showAsAction="never"
+            android:title=""/>
+
+        <!--<item android:id="@+id/ladies_only"
+              android:icon="@drawable/nav_ladies_icon"
+              android:title="@string/ladies_only"
+              app:showAsAction="always"
+              app:actionLayout="@layout/toogle"/>-->
+
+        <item
+            android:id="@+id/rider_mode"
+            android:title="DRIVER MODE"
+            app:actionLayout="@layout/toogle"
+            app:showAsAction="always"
+            android:icon="@drawable/nav_driver_icon"/>
+
+
+        <item
+            android:id="@+id/femaleMode"
+            android:title="LADIES ONLY"
+            app:actionLayout="@layout/toogle"
+            app:showAsAction="always"
+            android:icon="@drawable/nav_ladies_icon"/>
+
+    </group>
+</menu>

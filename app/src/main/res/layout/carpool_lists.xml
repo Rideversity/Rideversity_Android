@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/layout_pickup_now"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="@dimen/five_dp"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9">
+
+            <cab.com.rideversitydriver.Shapes.RoundedImageView
+                android:id="@+id/imageView_driver"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:src="@drawable/welcome_bg"/>
+
+
+            <ImageView
+                android:id="@+id/image_rideHistory_from"
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_toRightOf="@+id/imageView_driver"
+                android:src="@drawable/ride_history_from" />
+
+            <ImageView
+                android:id="@+id/image_rideHistory_to"
+                android:layout_width="@dimen/fifteen_dp"
+                android:layout_height="@dimen/fifteen_dp"
+                android:layout_below="@+id/image_rideHistory_from"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_toRightOf="@+id/imageView_driver"
+                android:src="@drawable/ride_history_to" />
+
+            <TextView
+                android:id="@+id/addressLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_toRightOf="@+id/image_rideHistory_from"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:text="30 NE 138 1ND AVE" />
+
+            <TextView
+                android:id="@+id/addressLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressLine1"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_toRightOf="@+id/image_rideHistory_from"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:text="20NE 138 1ND" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_toLeftOf="@+id/imageView_arrow"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                android:text="05/10/2016" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_toLeftOf="@+id/imageView_arrow"
+                android:gravity="right"
+                android:layout_below="@+id/date"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                android:text="Departure:11:45 AM" />
+
+
+
+            <ImageView
+                android:id="@+id/imageView_arrow"
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_marginRight="@dimen/five_dp"
+                android:src="@drawable/orange_arrow" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:layout_below="@+id/layout_pickup_now"
+        android:layout_marginTop="@dimen/five_dp"
+        android:background="@color/grey" />
+
+</RelativeLayout>

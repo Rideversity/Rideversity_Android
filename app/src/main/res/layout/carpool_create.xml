@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_carpoolcreate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scrollView_carpool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_centerInParent="true"
+                android:background="@color/grey"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/carpool_details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textview_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:gravity="center"
+                android:text="@string/tap_enter"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="normal" />
+
+           <!-- <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/carpool_hint"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textview_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:gravity="center"
+                android:text="@string/tap_enter"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="normal" />
+
+           <!-- <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/carpool_hint"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/pick_up_location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:dropDownHeight="@dimen/two_hundred_dp"
+                android:dropDownWidth="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="Enter Pickup Location Address"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|textImeMultiLine"
+                android:scrollHorizontally="false"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                android:textSize="@dimen/sp_14"
+                android:verticalScrollbarPosition="right" />
+
+            <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/carpool_hint"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/destination"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:dropDownHeight="@dimen/two_hundred_dp"
+                android:dropDownWidth="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="Enter Destination Address"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|textImeMultiLine"
+                android:scrollHorizontally="false"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                android:textSize="@dimen/sp_14"
+                android:verticalScrollbarPosition="right" />
+
+            <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/carpool_hint"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/no_of_seats_avl"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edittext_seatnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:layout_marginTop="@dimen/five_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/enter_no_of_seats"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/layout_invite_rider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_inviterider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:text="@string/invite_riders"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView_invite_rider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="normal" />
+
+
+               <!-- <EditText
+                    android:id="@+id/editText_invite_rider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/carpool_hint"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp_14" />-->
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/suggested_donation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+
+
+            <EditText
+                android:id="@+id/edittext_donation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/five_dp"
+                android:hint="@string/tap_here"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/trip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/carpool_hint"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/two_dp"
+                android:background="@color/grey" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="@string/comments"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edittext_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/five_dp"
+                android:gravity="center"
+                android:hint="@string/tap_here"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:background="@color/grey"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_create_carpool"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_marginBottom="@dimen/twenty_dp"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@drawable/orange_button_empty"
+                    android:text="@string/create_carpool"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

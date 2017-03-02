@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/fifteen_dp">
+
+    <TextView
+        android:id="@+id/textView_dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:gravity="center"
+        android:text="SELECT IMAGE"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp_20" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_dialogTitle"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:padding="@dimen/thirty_dp">
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:background="@drawable/orange_button_empty"
+            android:text="@string/take_photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_below="@+id/camera"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:background="@drawable/orange_button_empty"
+            android:text="@string/photo_lib"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle_orange_border_background"
+        android:text="@string/cancel"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/twenty_dp"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp_16" />
+
+
+</RelativeLayout>

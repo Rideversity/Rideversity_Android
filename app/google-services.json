@@ -1,0 +1,89 @@
+{
+  "project_info": {
+    "project_number": "283384879677",
+    "firebase_url": "https://rideversity-1705e.firebaseio.com",
+    "project_id": "rideversity-1705e",
+    "storage_bucket": "rideversity-1705e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283384879677:android:c47e2133670495f4",
+        "android_client_info": {
+          "package_name": "cab.com.rideversity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283384879677-3loag94d3d4bvdc0rmb0fsdjvr1dkobf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBHCg-C31baIA6eDfAZdc4B0_i_O1oFvI"
+        },
+        {
+          "current_key": "AIzaSyCZphDkI3hF4U1KOCUc2EnQGzKH26dNJmU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283384879677-3loag94d3d4bvdc0rmb0fsdjvr1dkobf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283384879677:android:48ae66b3cbadbb45",
+        "android_client_info": {
+          "package_name": "cab.com.rideversitydriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283384879677-3loag94d3d4bvdc0rmb0fsdjvr1dkobf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBHCg-C31baIA6eDfAZdc4B0_i_O1oFvI"
+        },
+        {
+          "current_key": "AIzaSyCZphDkI3hF4U1KOCUc2EnQGzKH26dNJmU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283384879677-3loag94d3d4bvdc0rmb0fsdjvr1dkobf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

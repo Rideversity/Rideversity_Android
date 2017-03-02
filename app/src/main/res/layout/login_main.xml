@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <!-- <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/fifty_dp"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:background="@color/colorPrimary"
+         app:navigationIcon="@drawable/back_arrow"
+         android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+     />-->
+    <include
+        android:id="@+id/app_toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:gravity="center"
+        android:text="Welcome Back!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_25" />
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="@dimen/hundred_dp"
+        android:layout_height="@dimen/hundred_dp"
+        android:layout_below="@+id/textView_welcome"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_icon">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/parameterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/textView_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:text="@string/username"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18" />
+
+                <TextView
+                    android:id="@+id/textView_forgotUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView_username"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text="@string/forgot_username"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/sp_12" />
+
+                <EditText
+                    android:id="@+id/editText_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_forgotUsername"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="@string/tap_here"
+                    android:imeOptions="actionNext"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/textView_error_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText_username"
+                    android:layout_marginTop="@dimen/three_dp"
+                    android:gravity="center"
+                    android:text="@string/password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <TextView
+                    android:id="@+id/textView_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_error_username"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18" />
+
+                <TextView
+                    android:id="@+id/textView_forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView_password"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/sp_12" />
+
+                <!--<EditText
+                    android:id="@+id/editText_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_forgotPassword"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/tap_here"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:ellipsize="end"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_16"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="@color/colorPrimary"
+                    android:layout_marginBottom="@dimen/ten_dp"/>-->
+
+                <TextView
+                    android:id="@+id/textView_error_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText_password"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:layout_marginTop="@dimen/three_dp"
+                    android:gravity="center"
+                    android:text="@string/password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/editText_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editText_username"
+                    android:layout_alignStart="@+id/editText_username"
+                    android:layout_below="@+id/textView_forgotPassword"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:hint="@string/tap_here"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                    android:textSize="@dimen/sp_16" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_below="@+id/parameterLayout"
+                android:layout_marginBottom="@dimen/five_dp"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:background="@drawable/orange_button_empty"
+                android:text="@string/login_caps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

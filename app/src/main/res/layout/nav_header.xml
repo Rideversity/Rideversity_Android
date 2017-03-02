@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/sp_30"
+    android:paddingBottom="@dimen/twenty_dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:gravity="center_horizontal">
+
+        <cab.com.rideversitydriver.Shapes.PolygonImageView
+            android:id="@+id/imageView_profile"
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:src="@drawable/welcome_bg"
+            app:poly_border="false"
+            app:poly_border_color="@android:color/black"
+            app:poly_border_width="0dp"
+            app:poly_corner_radius="5"
+            app:poly_rotation_angle="90"
+            app:poly_shadow="false"
+            app:poly_vertices="6" />
+
+        <!--<ImageView
+            android:id="@+id/imageView_profile"
+            android:src="@drawable/nav_request_icon"
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_height="@dimen/fifty_dp" />-->
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_toRightOf="@+id/imageView_profile"
+            android:maxLines="1"
+            android:text="Terrel D"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/text_view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_toRightOf="@+id/imageView_profile"
+            android:maxLines="1"
+            android:text="View Profile"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/imageView_setting"
+            android:layout_width="@dimen/thirty_dp"
+            android:layout_height="@dimen/thirty_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:src="@drawable/nav_settings_icon" />
+
+
+        <!--<TextView
+            android:textSize="@dimen/sp_16"
+            android:layout_width="@dimen/thirty_dp"
+            android:layout_height="@dimen/thirty_dp"
+            android:text="$3"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/imageView_setting"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:background="@drawable/nav_rewardcount_icon"
+        />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/layout_addpayment_full"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@color/colorPrimary">
+
+        <!-- <ImageView
+             android:id="@+id/imageView_backarrow"
+             android:layout_width="@dimen/fifteen_dp"
+             android:layout_height="@dimen/fifteen_dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="@dimen/fifteen_dp"
+             android:src="@drawable/back_arrow" />-->
+
+        <TextView
+            android:id="@+id/textView_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:text="X"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_23" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0.3dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/textView_backarrow"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/textView_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/line"
+            android:text="@string/add_card"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:padding="@dimen/ten_dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/full_name"
+                android:layout_weight="1.3"
+                android:id="@+id/textView_full_name"/>
+
+            <EditText
+                android:id="@+id/editText_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/four_dp"
+                android:layout_weight="0.7"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                android:gravity="right"
+                android:hint="@string/tap_here"
+                android:cursorVisible="false"
+                android:maxLines="1"
+                android:lines="1"
+                android:focusable="true"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_14"
+            android:gravity="right"
+            android:text="Please enter Full Name"
+            android:layout_weight="1.3"
+            android:id="@+id/textView_full_name_error"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/fifteen_dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:layout_weight="1.3"
+                android:text="@string/cards_number"
+                android:id="@+id/textView_card_number"/>
+
+            <EditText
+                android:id="@+id/editText_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/four_dp"
+                android:layout_weight="0.7"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:hint="@string/tap_here"
+                android:lines="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_14"
+            android:gravity="right"
+            android:text="Please enter Card Number"
+            android:layout_weight="1.3"
+            android:id="@+id/textView_card_number_error"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/fifteen_dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:layout_weight="1.3"
+                android:text="@string/expiration_date"
+                android:id="@+id/textViews_expiration_date"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:layout_margin="@dimen/four_dp"
+                android:text="@string/tap_here"
+                android:id="@+id/textView_expiration_date"/>
+
+            <!--<EditText
+                android:id="@+id/editText_expiration_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/four_dp"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:hint="@string/tap_here"
+                android:layout_weight="0.7"
+                android:lines="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />-->
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_14"
+            android:gravity="right"
+            android:text="Please enter Expiration Date"
+            android:layout_weight="1.3"
+            android:id="@+id/textView_exp_date_error"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/fifteen_dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:layout_weight="1.3"
+                android:text="@string/cvv_code"
+                android:id="@+id/textView_cvc"/>
+
+            <EditText
+                android:id="@+id/editText_cvc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/four_dp"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:hint="@string/tap_here"
+                android:lines="1"
+                android:layout_weight="0.7"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textCursorDrawable="@drawable/custom_edittext_cursor_green"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_14"
+            android:gravity="right"
+            android:text="Please enter CVV Code"
+            android:layout_weight="1.3"
+            android:id="@+id/textView_cvc_error"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/orange_button_empty"
+        android:text="@string/add_card"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+
+
+</LinearLayout>

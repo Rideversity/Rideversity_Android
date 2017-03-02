@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/welcome_bg"
+        android:padding="@dimen/twenty_dp">
+
+        <cab.com.rideversitydriver.Shapes.PolygonImageView
+            android:id="@+id/imageView_profile"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pic_upload_icon"
+            app:poly_border="true"
+            app:poly_border_color="@color/orange"
+            app:poly_border_width="0dp"
+            app:poly_corner_radius="5"
+            app:poly_rotation_angle="90"
+            app:poly_shadow="false"
+            app:poly_vertices="6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7">
+        <include layout="@layout/profile_info_details"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="@color/grey">
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/thirtyfive_dp"
+            android:layout_marginRight="@dimen/thirtyfive_dp"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:background="@drawable/ride_type_button" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

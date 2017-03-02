@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/ten_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/five_dp"
+        android:background="@drawable/box_grey_stroke"
+        android:orientation="horizontal">
+
+        <cab.com.rideversitydriver.Shapes.RoundedImageView
+            android:id="@+id/imageView_joined_rider"
+            android:layout_width="@dimen/fourty_dp"
+            android:layout_height="@dimen/fourty_dp"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/no_image" />
+
+       <!-- <ImageView
+            android:layout_width="@dimen/fourty_dp"
+            android:layout_height="@dimen/fourty_dp"
+            android:layout_margin="@dimen/ten_dp"
+            android:background="@drawable/circle_grey" />-->
+
+        <TextView
+            android:id="@+id/textview_empty_rider_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/spot_aval"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,250 @@
+<resources>
+    <string name="app_name">Rideversity Driver</string>
+
+    <string name="home">HOME</string>
+    <string name="carpool">CARPOOL</string>
+    <string name="payment">PAYMENT</string>
+    <string name="rewards">REWARDS</string>
+    <string name="ride_history">MY RIDES</string>
+    <string name="rider_mode">RIDER MODE</string>
+    <string name="settings">SETTINGS</string>
+
+    <!--Ride Details-->
+    <string name="new_ride_alert">NEW RIDE ALERT</string>
+    <string name="destination">DESTINATION</string>
+    <string name="accept_ride">ACCEPT RIDE \n ETA 4 min</string>
+    <string name="call_rider">Call Rider</string>
+    <string name="text_rider">Text Rider</string>
+    <string name="complete_ride">COMPLETE RIDE</string>
+    <string name="notify_arrival">NOTIFY ARRIVAL</string>
+    <string name="ride_details">Ride Details</string>
+    <string name="pick_up_location">PICK-UP LOCATION</string>
+    <string name="drop_off_location">DROP-OFF LOCATION</string>
+    <string name="no_of_seats">NUMBER OF SEATS</string>
+    <string name="donation">DONATION</string>
+    <string name="trip">TRIP</string>
+    <string name="comments">COMMENTS</string>
+    <string name="ride_completed">Ride Completed</string>
+    <string name="ride_completed_one">Thank you for using Rideversity. We have</string>
+    <string name="ride_completed_two">stored the ride details in your history.</string>
+    <string name="carpool_details">Carpool Details</string>
+
+    <!--CarPool-->
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+    <string name="no_of_seats_avl">NUMBER OF SEATS AVAILABLE</string>
+    <string name="suggested_donation">SUGGESTED DONATION</string>
+    <string name="join_carpool">JOIN CARPOOL</string>
+    <string name="start_carpool">START CARPOOL</string>
+    <string name="create_carpool">CREATE CARPOOL</string>
+    <string name="spot_aval">Spot Available</string>
+    <string name="riders">RIDERS</string>
+    <string name="invite_riders">INVITE RIDERS</string>
+    <string name="carpool_hint"> - </string>
+
+    <string name="notification_setting">Notification Settings</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions</string>
+
+    <!--Notification-->
+    <string name="notification_one">Notification #1</string>
+    <string name="notification_two">Notification #2</string>
+    <string name="notification_three">Notification #3</string>
+    <string name="terms_condition_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat nunc id eros posuere sit amet malesuada lacus viverra. Phasellus vel orci nec est interdum facilisis.
+        Phasellus vel orci nec est interdum facilisis.
+        Phasellus vel orci nec est interdum facilisis.
+        Phasellus vel orci nec est interdum facilisis.
+        Phasellus vel orci nec est interdum facilisis.
+        Phasellus vel orci nec est interdum facilisis.</string>
+
+    <!--Ride History-->
+    <string name="ride_type">RIDE TYPE</string>
+    <string name="driver">USER:</string>
+    <string name="driver_name">JOHN DOE</string>
+    <string name="car_used">HONDA ACCORD 2016</string>
+    <string name="datetime">DATE / TIME</string>
+    <string name="seekbar_dollar">$5.00</string>
+    <string name="cancel_ride">CANCEL RIDE</string>
+    <string name="pickup_date">pick-up date</string>
+    <string name="pickup_time">pick-up time</string>
+    <string name="rider">RIDER</string>
+    <string name="rider_colan">RIDER:</string>
+    <string name="advanced_booking_details">Advanced Booking Details</string>
+
+    <string name="real_time_rides">REAL TIME RIDES</string>
+    <string name="avaliable">Available</string>
+    <string name="advanced_booking">ADVANCED BOOKINGS</string>
+    <string name="ride_filter">Ride Filters</string>
+    <string name="by_ride_type">BY RIDE TYPE</string>
+    <string name="by_school">BY SCHOOL</string>
+    <string name="by_zipcode">BY ZIP CODE</string>
+    <string name="by_distance">BY DISTANCE</string>
+    <string name="update_caps">UPDATE</string>
+    <string name="select">Select</string>
+
+
+    <!--Payment-->
+    <string name="add_credit_card">add new credit card</string>
+    <string name="full_name">Full Name</string>
+    <string name="cards_number">Card Number</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="cvc_code">CVC Code</string>
+    <string name="add_card">Add Card</string>
+    <string name="bank">BANK NAME</string>
+    <string name="account_number">ACCOUNT NUMBER</string>
+    <string name="account_holder">ACCOUNT HOLDER</string>
+    <string name="edit">Edit</string>
+
+    <string name="rider1">Annie Schultz</string>
+    <string name="rider2">John Doe</string>
+
+    <!-- Dialog-->
+    <string name="reg_sucess">Registration Successful</string>
+    <string name="reg_desc">You can now log in and enjoy all of </string>
+    <string name="reg_desc2">  Riderversity features</string>
+    <string name="cancel_ride_lower">Cancel Ride</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">NO</string>
+    <string name="cancel_desc">Are you sure that you want to cancel the ride?</string>
+
+
+    <string name="estimated_mileage">ESTIMATED MILEAGE</string>
+    <string name="request_driver">REQUEST TO BE DRIVER \n ETA 4 min</string>
+
+    <!--Rewards-->
+    <string name="location">TAKE ME TO THE LOCATION</string>
+    <string name="reward_sponsor">SPONSOR NAME</string>
+    <string name="reward_place">COOL BARBERSHOP</string>
+    <string name="desc">DESCRIPTION</string>
+    <string name="shop_desc">Having now successfully launched three growing salons
+        in South London, the brothers recognised they needed to build a strong team to
+        support the growth of the business – instilling in them a shared philosophy and
+        educating them in the new fashion-led techniques they were creating. However,
+        the South London location was proving to be a challenge when looking to recruit
+        driven team members orfinding publications willing to publish the photographic
+        work they were now starting to produce.</string>
+    <string name="pickup_now">Pickup Now \n Avg. wait time: 4 minutes</string>
+    <string name="pickup_later">Pickup Later \n Set a date/pick time</string>
+
+    <!--Profile-->
+    <string name="personal_details">Personal Details</string>
+    <string name="driver_doc">Driver Documentation</string>
+    <string name="change_pwd">Change Password</string>
+    <string name="change_email">Change Email</string>
+    <string name="emerg_contact">Emergency Contacts</string>
+    <string name="logout">Logout</string>
+    <string name="username">USERNAME</string>
+    <string name="fullname">FULL NAME</string>
+    <string name="phone">PHONE NUMBER</string>
+    <string name="email">EMAIL</string>
+    <string name="update">Update</string>
+    <string name="gender">GENDER</string>
+    <string name="first_name">First Name</string>
+    <string name="firstname">FIRST NAME</string>
+    <string name="lastname">LAST NAME</string>
+    <string name="campus_email">CAMPUS EMAIL</string>
+    <string name="school_email">SCHOOL EMAIL</string>
+    <string name="school_name">SCHOOL NAME</string>
+
+    <string-array name="school">
+        <item>University of Miami</item>
+        <item>University of US</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Tap Here</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="student_array">
+        <item>Freshman</item>
+    </string-array>
+    <string-array name="service_array">
+        <item>Taxi</item>
+    </string-array>
+    <string-array name="faculty_array">
+        <item>Teacher</item>
+        <item>Professor</item>
+    </string-array>
+    <string-array name="report_array">
+        <item>Reason for Reporting</item>
+        <item>Taxi</item>
+        <item>Delay</item>
+    </string-array>
+
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="current_email">Current Email</string>
+    <string name="new_email">New Email</string>
+    <string name="type_of_service">TYPE OF SERVICE</string>
+
+    <!--Driver Detail Verification-->
+    <string name="tap_view">Tap to view</string>
+    <string name="tap_enter">Tap to enter</string>
+    <string name="driver_license">PROOF OF DRIVERS LICENSE</string>
+    <string name="driver_license_no">DRIVER LICENSE NUMBER</string>
+    <string name="driver_license_expiry">DRIVER LICENSE EXPIRATION DATE</string>
+    <string name="car_insurance">PROOF OF CAR INSURANCE</string>
+    <string name="insurance_exp_date">INSURANCE EXPIRATION DATE</string>
+    <string name="insurance_no">INSURANCE NUMBER</string>
+    <string name="vehicle_tag">PROOF OF VEHICLES TAG</string>
+    <string name="tag_no">TAG NUMBER</string>
+    <string name="proof_reg">PROOF OF REGISTRATION</string>
+    <string name="next">NEXT</string>
+    <string name="driver_detail_verify">Driver Detail Verification</string>
+
+    <string name="front_pic">FRONT PICTURE OF VEHICLE</string>
+    <string name="side_pic">SIDE PICTURE OF VEHICLE</string>
+    <string name="rear_pic">REAR PICTURE OF VEHICLE</string>
+    <string name="seats">SEATS AVAILABLE</string>
+    <string name="become_driver">BECOME A DRIVER</string>
+    <string name="enter">ENTER</string>
+    <string name="driver_agree">I AGREE to the Driver Terms &amp; Conditions</string>
+    <string name="register_email">Register with email</string>
+    <string name="login_small">Login</string>
+    <string name="forgot_username">Forgot username?</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="password">PASSWORD</string>
+    <string name="login_caps">LOGIN</string>
+
+    <string name="username_recovery">Username Recovery</string>
+    <string name="password_recovery">Password Recovery</string>
+    <string name="recovery_email">ENTER RECOVERY EMAIL</string>
+    <string name="submit_request">SUBMIT REQUEST</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="conform">CONFIRM</string>
+    <string name="by_reg_rideversity">By registering you agree to the Rideversity</string>
+    <string name="terms_of_service"><u>Terms of Service</u></string>
+
+    <string name="tap_upload">Tap to upload</string>
+    <string name="real_time_ride_details">Real- Time Ride Details</string>
+    <string name="posted">Posted</string>
+    <string name="advanced_booking_ride_details">Advance Booking Ride Details</string>
+    <string name="tap_here">Tap Here</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="photo_lib">Photo Library</string>
+    <string name="cancel">Cancel</string>
+    <string name="cvv_code">CVV Code</string>
+    <string name="enter_no_of_seats">Enter number of seats</string>
+
+    <string name="vehicle_detail_verify">Vehicle Detail Verification</string>
+    <string name="driver_information">Driver information</string>
+    <string name="register">REGISTER</string>
+    <string name="mailing_address">MAILING ADDRESS</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="student_classify">STUDENT CLASSIFICATION</string>
+    <string name="social_security_number">SOCIAL SECURITY NUMBER</string>
+    <string name="student_id">STUDENT ID (CURRENT YEAR)</string>
+    <string name="license">I consent to run a license &amp; background check</string>
+    <string name="i_agree">I AGREE to the Terms &amp; Conditions</string>
+    <string name="title_activity_rewards_filter">Rewards Filter</string>
+    <string name="category">Category</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="routing_number">ROUTING NUMBER</string>
+    <string name="cancel_button">CANCEL</string>
+    <string name="cancel_request">CANCEL REQUEST</string>
+    <string name="realtimeridetext">Real Time Ride Details</string>
+    <string name="adavanceBookingText">Advanced Booking Details</string>
+</resources>

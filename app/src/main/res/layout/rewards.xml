@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rewards_mainLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@+id/header"
+        android:layout_margin="@dimen/ten_dp">
+
+        <EditText
+            android:id="@+id/search_rewards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_bacground"
+            android:drawablePadding="@dimen/ten_dp"
+            android:hint="Search"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/fourty_dp"
+            android:paddingRight="@dimen/five_dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey"
+            android:textCursorDrawable="@null">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="@dimen/twenty_dp"
+            android:layout_height="@dimen/twenty_dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/home_search_icon" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_reward"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+
+</LinearLayout>

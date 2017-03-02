@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ten_dp"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:gravity="center"
+            android:text="@string/ride_completed"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_25" />
+
+        <TextView
+            android:id="@+id/textView_dialogDesc_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_dialogTitle"
+            android:layout_marginTop="@dimen/five_dp"
+            android:gravity="center"
+            android:text="@string/ride_completed_one"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/textView_dialogDesc_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_dialogDesc_one"
+            android:gravity="center"
+            android:text="@string/ride_completed_two"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/imageView_check"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/ten_dp"
+            android:layout_below="@+id/textView_dialogDesc_two"
+            android:src="@drawable/check_pop_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

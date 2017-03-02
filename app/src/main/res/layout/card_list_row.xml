@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_creditcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/imageView_credit_card">
+
+        <ImageView
+            android:id="@+id/imageView_reward"
+            android:layout_width="@dimen/fiftyfive_dp"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:padding="@dimen/five_dp"
+            android:src="@drawable/payment_cc_icon" />
+
+        <TextView
+            android:id="@+id/textView_cardNo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fiftyfive_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_toRightOf="@+id/imageView_reward"
+            android:layout_toLeftOf="@+id/imageView_right_arrow"
+            android:gravity="left|center"
+            android:text="Credit Card ****-***-8759"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/imageView_right_arrow"
+            android:layout_width="@dimen/ten_dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:src="@drawable/orange_arrow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_below="@+id/imageView_reward"
+            android:layout_marginTop="@dimen/two_dp"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
